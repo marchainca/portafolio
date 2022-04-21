@@ -1,0 +1,100 @@
+/*fuentes*/
+@font-face{
+    font-family:'HeydingsCommonIconsRegular';
+    src: url('http://ianfarb.com/random/heydings_icons-webfont.eot');
+    src: url('http://ianfarb.com/random/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://ianfarb.com/random/heydings_icons-webfont.woff') format('woff'),
+         url('http://ianfarb.com/random/heydings_icons-webfont.ttf') format('truetype'),
+         url('http://ianfarb.com/random/heydings_icons-webfont.svg#HeydingsCommonIconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header{
+    padding: 10rem 2rem 0 2rem;
+}
+
+.bg{
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: .25s;
+    z-index: -1;
+}
+
+.menu__item{
+    list-style: none;
+}
+
+.menu__link{
+    background: #ccc;
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: 'HeydingsCommonIconsRegular', Helvetida Neue, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 25px 0;
+    text-align: center;
+    text-decoration: none;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 2px 2px 0 rgba(0,0,0, .50);
+    text-transform: uppercase;
+    transition: .25s;
+    width: 20%;
+}
+
+.menu__link:hover{
+    margin: -10px 0 0 0;
+    
+}
+
+.menu{
+    border-radius: 15px;
+    height: 600px;
+    margin: 60px auto 0 auto;
+    overflow: hidden;
+    width: 600px;
+
+}
+
+.menu .menu__item:first-child .menu__link{
+    background: #ffca6d !important;
+    color: #160502;
+} 
+
+.menu .menu__item:nth-child(2) .menu__link{
+    background: #ff6d6d !important;
+    color: #160502;
+}
+
+.menu .menu__item:nth-child(3) .menu__link{
+    background: #6dffb9 !important;
+    color: #160502;
+}   
+
+.menu .menu__item:nth-child(4) .menu__link{
+    background: #6dcaff !important;
+    color: #160502;
+} 
+
+.menu .menu__item:first-child:hover ~ .bg{
+    background: #ffca6d;
+    color: #160502;
+}
+
+.menu .menu__item:nth-child(2):hover ~ .bg{
+    background: #ff6d6d
+}
+
+.menu .menu__item:nth-child(3):hover ~ .bg{
+    background: #6dffb9
+}
+
+.menu .menu__item:nth-child(4):hover ~ .bg{
+    background: #6dcaff
+}
